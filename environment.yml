@@ -1,0 +1,14 @@
+name: accessibilifier_env
+channels:
+  - defaults
+dependencies:
+  - python==3.8
+  - jupyter
+  - pandas
+  - tqdm
+  - matplotlib
+  - nltk
+  - seaborn
+  - openai
+  - clean-text
+prefix: /Users/rubenvanheusden/anaconda3/envs/accessibilifier_env
