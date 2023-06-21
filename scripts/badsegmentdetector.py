@@ -101,4 +101,4 @@ def run_bad_segment_detection(input_dataframe: list, tolerance: int, clean_input
                                 'Bad Ratio': bad_segments.mean(),
                                 'Num Tokens': len(bad_segments)}
 
-    return pd.DataFrame.from_dict(results, orient='index'), all_bad_segment_lengths
+    return pd.DataFrame.from_dict(results, orient='index')
