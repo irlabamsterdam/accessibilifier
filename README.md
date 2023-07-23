@@ -35,11 +35,22 @@ cd TPDLAccessibilityofGovernmentDocuments
    ```
    pip install - requirements.txt
    ```
-7. Running Jupyter Notebook:
+   
+7. To install the package, run the following command while in the root folder:
+	```
+	pip install -e .
+	```
+
+8. Running Jupyter Notebook:
    If you haven't worked with Jupyter Notebook yet, you should set up jupyter so that you can select the right kernel and work with the packages we just installed.
    ```
    ipython kernel install --name "accessibilifier_env" --user
    ```
+
+9. Some additional packages
+    - There are some packages that cannot be installed through the pip process, such as
+   `verapdf`, `tesseract` and `pdftohtml`, depending on your system you can these by following
+   the links on the websites of the packages. (On Mac all of these can be installed via HomeBrew as well.)
    
 ## Directory Structure
 
@@ -47,8 +58,11 @@ cd TPDLAccessibilityofGovernmentDocuments
     - `Experiments.ipynb`: Notebook containing the main experiments and explanation of the algorithm. 
 - `data/`: Contains the dataset and word lists used in this research
    - `data.csv.gz` dataframe containing the indidivual pages their text.
-   - `parlamint_wordlist.txt`:  Word list containing all the unique words from the ParlaMint dataset
-   - `taalunie_wordlist.txt` : Word list containing all the unique words from the TaalUnie dataset
-   - `wordlist.txt`: Word list containing all the unique words from the ParlaMint and TaalUnie lists combine.
+   - `parlamint_wordlist.txt.gz`:  Word list containing all the unique words from the ParlaMint dataset
+   - `taalunie_wordlist.txt.gz` : Word list containing all the unique words from the TaalUnie dataset
+   - `wordlist.txt.gz`: Word list containing all the unique words from the ParlaMint and TaalUnie lists combine.
 - `scripts/`
+	- `badsegmentdetector.py`: file that contains the complete implementation of the bad segment detector as shown in the experiment notebook.
+	- `run_bad_segment_detection.py`: command line script that can be used to run the bad segments detector on an input file
+	- `run_accessibilifier.py`: command line script that can be used to run the complete pipeline on an input pdf file.
 - `examples/`

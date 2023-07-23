@@ -1,0 +1,11 @@
+README.md
+setup.py
+accessibilifier.egg-info/PKG-INFO
+accessibilifier.egg-info/SOURCES.txt
+accessibilifier.egg-info/dependency_links.txt
+accessibilifier.egg-info/top_level.txt
+notebooks/__init__.py
+scripts/__init__.py
+scripts/badsegmentdetector.py
+scripts/preprocessing.py
+scripts/run_bad_segment_detection.py

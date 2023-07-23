@@ -1,3 +1,4 @@
+import gzip
 import numpy as np
 from tqdm import tqdm
 from typing import List
@@ -5,10 +6,10 @@ from preprocessing import *
 from nltk.tokenize import word_tokenize
 
 class BadSegmentDetector:
-    def __init__(self, word_list_path: str = '../data/wordlist.txt'):
+    def __init__(self, word_list_path: str = '../data/wordlist.txt.gz'):
         # Read in the word list
-        with open(word_list_path, 'r') as f:
-            all_dutch_words = set([item.strip().lower() for item in f.readlines()])
+        with gzip.open(word_list_path, 'r') as f:
+            all_dutch_words = set([item.decode().strip().lower() for item in f.readlines()])
         # remove any numbers from the word list, as we have also remove them from the page tokens.
         self.word_list = set([item for item in all_dutch_words if not any(char.isdigit() for char in item)])
 
