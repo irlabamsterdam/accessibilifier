@@ -64,5 +64,6 @@ cd TPDLAccessibilityofGovernmentDocuments
 - `scripts/`
 	- `badsegmentdetector.py`: file that contains the complete implementation of the bad segment detector as shown in the experiment notebook.
 	- `run_bad_segment_detection.py`: command line script that can be used to run the bad segments detector on an input file
-	- `run_accessibilifier.py`: command line script that can be used to run the complete pipeline on an input pdf file.
+	- `run_pdfconverter.py`: command line script that can be used to run the pdf to markdown converter.
 - `examples/`
+        - `test_file.pdf`: An example PDF file that you can use to try the scripts. 
