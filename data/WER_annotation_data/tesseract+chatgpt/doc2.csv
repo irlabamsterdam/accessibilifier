@@ -1,0 +1,10 @@
+text;Number of Tokens;Number of Mistakes;Number of Hallucinations;Number of OCR errors
+Wob-besluit;1;0;;
+minister;1;0;;
+"Koninkrijksrelaties, noem ze,
+Maarten churi Secretaris-generaal
+Belanghebbenden";7;3;2;1
+besluit;1;0;;
+Consulaire;1;1;1;
+moet ondertekend;2;1;1;
+besluit;1;0;;
